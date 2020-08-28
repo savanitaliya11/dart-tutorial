@@ -20,7 +20,7 @@ void main() {
   print(name.isEmpty); //return false if given map is empty.
   name.forEach((key, value) => print('key: $key and value: $value'));
 
-  /*for (String key in name.keys) {
+  for (String key in name.keys) {
     print(key);
   }
   for (String values in name.values) {
@@ -35,5 +35,4 @@ void main() {
       print('country is: $country and number is : $number'));
   print(' ');
   name.forEach((key, value) => print('key: $key and values: $value'));
-*/
 }
