@@ -18,7 +18,7 @@ class Student{
     print('My age is ${this.i}');
     }
   }*/
-  //2.Parameterized constructor.
+//2.Parameterized constructor.
 /*
 void main(){
   //stu is reference or object of Student() class
@@ -33,8 +33,8 @@ class Student{
 
   //parametrized constructor
   Student(int i, String name){
-    this.i = i;           //this.i refer to int i.
-    this.name = name;     //this.i = i refer to parameter
+    this.i = i;           //this.i refer to int i within a class.
+    this.name = name;     //this.name refer to name var within a class.
 
   }
 
@@ -65,4 +65,3 @@ class Student{
   Student.myAnotherconstructor(this.i, this.name);
 }
 */
-
