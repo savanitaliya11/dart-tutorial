@@ -16,8 +16,8 @@
 //  try {
 //    int result = 12~/0;
 //    print('the result is $result');
-//  }catch(e){                        //(e) is a object of excwptions
-//    print('the exceptions is $e');
+//  }catch(e){                        //(e) is a object of exceptions
+//    print('the exceptions is $e');  //It will return error type
 //  }
 //
 //
@@ -77,23 +77,23 @@ void main(){
   }
 */
 //Custom exceptions
-class resNegative implements Exception{
-  String getError(){
+class resNegative implements Exception {
+  String getError() {
     print('invalid marks');
   }
 }
 
-void main(){
-  int marks = -85;
-  if (marks < 0 ){
+void main() {
+  int marks = 85;
+  if (marks < 0) {
     try {
       throw resNegative();
-    }catch(e){
+    } catch (e) {
       e.getError();
     }
-  }else if(marks >=80 && marks <= 90) {
+  } else if (marks >= 80 && marks <= 90) {
     print('B grade');
-  }else {
+  } else {
     print('failed');
   }
 }
